@@ -1,0 +1,125 @@
+*{
+    /* margin: 0; */
+}
+
+body {
+    margin: 0px;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar{
+    /* margin-top: 0px; */
+    background-color: rgb(26, 26, 105);
+    text-decoration: none;
+    height: 5rem;
+    width: 100%;
+    box-shadow: 10px 10px lightblue;
+    border-bottom-left-radius: 30% 50%;
+    border-bottom-right-radius: 30% 50%;
+}
+
+ul li {
+    padding-top: 10px;
+    display: inline;
+    padding: 15px;
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color:#fff;
+}
+a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
+.registration{
+    margin-top: 1.8rem;
+    display: grid;
+}
+.flex-registration{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+label{
+    display: block;
+    padding: 20px;
+}
+.btn {
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 40%;
+    background-color: blue;
+    color: #fff;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+}
+.payroll {
+    margin-top: 30px;
+}
+.flex-payroll {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+table{
+    margin: 1rem;
+    width: 100%;
+    /* border: 1px solid #ddd; */
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.alert {
+    padding: 20px;
+    background-color: #240da8;
+    color: white;
+  }
+.danger{
+    padding: 20px;
+    background-color: #cc2323;
+    color: white;
+}
+  
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .closebtn:hover {
+    color: black;
+  }
+
+.footer{
+    margin-top: 300px;
+    text-align: center;
+    background-color: rgb(26, 26, 105);
+    color: #fff;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.notifications{
+    display: flex;
+}
+.notifications > div {
+    margin-left: 14%;
+}
