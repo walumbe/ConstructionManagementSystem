@@ -21,8 +21,11 @@
 <div class="flex-payroll">
     <h3>Daily Payroll</h3>
     <input value="<?php echo date("l jS \of F Y"); ?>">
-    Rate/Hr: <input type="number" name="rate">
-    <button type="submit">Update</button>
+    <form action="" method="POST">
+        Rate/Hr: <input type="number" value="<?php echo $rate; ?>" name="rate">
+        <button type="submit" name="update">Update</button>
+    </form>
+    
 </div>
 </section>
 <div class="table">
@@ -42,13 +45,18 @@
             $payroll_data = mysqli_fetch_array($payroll_result);
             // var_dump($payroll_data);
 
+            if(isset($_POST['update']))
+            {
+                $rate = $_POST['rate'];
+            }
+
         ?>
         <tr>
             <td><?php echo $payroll_data['identificationNumber']; ?></td>
             <td><?php echo $payroll_data['fullName']; ?></td>
             <td><?php echo $payroll_data['timeIn']; ?></td>
             <td><?php echo $payroll_data['time_out']; ?></td>
-            <td><?php echo $_POST['rate']; ?></td>
+            <td><?php echo $rate; ?></td>
             <td><?php echo "Pending"; ?></td>
         </tr>
     </table>
