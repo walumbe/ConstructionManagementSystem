@@ -1,0 +1,11 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "url"]
+	url = git@github.com:walumbe/ConstructionManagementSystem.git
+	fetch = +refs/heads/*:refs/remotes/url/*
+[remote "origin"]
+	url = git@github.com:walumbe/ConstructionManagementSystem.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
